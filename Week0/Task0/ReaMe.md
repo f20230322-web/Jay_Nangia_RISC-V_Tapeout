@@ -1,13 +1,14 @@
 Oracle virtual machine link
 https://www.virtualbox.org/wiki/Downloads
-System Check
+
+# System Check
 6GB RAM, 50 GB HDD
 Ubuntu 20.04+
 4vCPU
 
 Tool check
 
-Yosys
+# Yosys
 $ sudo apt-get update
 $ git clone https://github.com/YosysHQ/yosys.git
 $ cd yosys
@@ -20,22 +21,22 @@ $ make config-gcc
 $ make
 $ sudo make install
 
-Iverilog
+# Iverilog
 
 Steps to install iverilog
 sudo apt-get update
 sudo apt-get install iverilog
 
-gtkwave
+# gtkwave
 
 Steps to install gtkwave
 sudo apt-get update
 sudo apt install gtkwave
 
-OpenSTA (not needed for SFAL participants)
+# OpenSTA (not needed for SFAL participants)
 https://github.com/The-OpenROAD-Project/OpenSTA
 —----—------------------------------------------End--------------------------------------------------------
-ngspice
+# ngspice
 After downloading the tarball from https://sourceforge.net/projects/ngspice/files/ to a local
 directory, unpack it using:
 $ tar -zxvf ngspice-37.tar.gz
@@ -79,16 +80,17 @@ sudo docker run hello-world
 sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo reboot
-# After reboot
+---After reboot---
 docker run hello-world
-Check dependencies
+
+# Check dependencies
+
 git --version
 docker --version
 python3 --version
 python3 -m pip --version
 make --version
 python3 -m venv -h
-Below steps installs PDKs and Tools
 cd $HOME
 git clone https://github.com/The-OpenROAD-Project/OpenLane
 cd OpenLane
